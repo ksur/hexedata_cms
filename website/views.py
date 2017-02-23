@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 
-# Create your views here.
+# main page
 def index(request):
     metaTitle = 'Hexe Data. Analityka Internetowa'
     context = {
@@ -9,16 +9,28 @@ def index(request):
     }
     return render(request, 'index.html', context)
 
-
+# page oferta
 def oferta(request):
-    return render(request, 'oferta.html')
+    metaTitle = 'Hexe Data. Oferta. Analityka Internetowa'
+    context = {
+        'metaTitle' : metaTitle,
+    }
+    return render(request, 'oferta.html', context)
 
-
+# page kompetencje
 def kompetencje(request):
-    return render(request, 'kompetencje.html')
+    metaTitle = 'Hexe Data. Kompetencje. Analityka Internetowa'
+    context = {
+        'metaTitle' : metaTitle,
+    }
+    return render(request, 'kompetencje.html', context)
 
-
+# psage kontakt
 def kontakt(request):
-    return render(request, 'kontakt.html')
+    metaTitle = 'Hexe Data. Kontakt. Analityka Internetowa'
+    context = {
+        'metaTitle' : metaTitle,
+    }
+    return render(request, 'kontakt.html', context)
 
 
