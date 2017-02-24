@@ -359,8 +359,7 @@ button {
       .box .gfx-wrapper {
         min-height: 130px; } }
   .box p {
-    font-weight: 700;
-    font-size: 11px; }
+    font-size: 15px; }
   .box .btn {
     border-width: 2px;
     position: absolute;

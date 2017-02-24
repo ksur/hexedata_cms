@@ -10,4 +10,6 @@ urlpatterns = [
     url(r'index/', views.index),
     url(r'narzedzia/', views.narzedzia),
     url(r'newsroom/', views.newsroom),
+    url(r'analiza-danych/', views.analizaDanych),
+    url(r'visual-analytics/', views.visualAnalytics),
 ]
