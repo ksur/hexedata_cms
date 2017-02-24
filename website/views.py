@@ -9,13 +9,21 @@ def index(request):
     }
     return render(request, 'index.html', context)
 
-# page oferta
+# page oferta ##############################################
 def oferta(request):
     metaTitle = 'Hexe Data. Oferta. Analityka Internetowa'
     context = {
         'metaTitle' : metaTitle,
     }
     return render(request, 'oferta.html', context)
+
+def analizaDanych(request):
+    return render(request, 'oferta/analiza_danych.html')
+
+def visualAnalytics(request):
+    return render(request, 'oferta/visual_analytics.html')
+
+# end page oferta ##############################################
 
 # page kompetencje
 def kompetencje(request):
@@ -25,7 +33,7 @@ def kompetencje(request):
     }
     return render(request, 'kompetencje.html', context)
 
-# psage kontakt
+# page kontakt
 def kontakt(request):
     metaTitle = 'Hexe Data. Kontakt. Analityka Internetowa'
     context = {
@@ -33,4 +41,19 @@ def kontakt(request):
     }
     return render(request, 'kontakt.html', context)
 
+# page narzedzia
+def narzedzia(request):
+    metaTitle = 'Hexe Data. Kontakt. Analityka Internetowa'
+    context = {
+        'metaTitle' : metaTitle,
+    }
+    return render(request, 'kontakt.html', context)
+
+# page newsroom
+def newsroom(request):
+    metaTitle = 'Hexe Data. Kontakt. Analityka Internetowa'
+    context = {
+        'metaTitle' : metaTitle,
+    }
+    return render(request, 'newsroom.html', context)
 
