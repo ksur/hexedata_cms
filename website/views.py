@@ -23,6 +23,9 @@ def analizaDanych(request):
 def visualAnalytics(request):
     return render(request, 'oferta/visual_analytics.html')
 
+def wdrozeniaAnalityczne(request):
+    return render(request, 'oferta/wdrozenia_analityczne.html')
+
 # end page oferta ##############################################
 
 # page kompetencje
