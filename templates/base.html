@@ -43,10 +43,10 @@
 						</button>
 						<div class="collapse navbar-collapse" id="navbarToggler">
 							<ul class="navbar-nav justify-content-around">
-								<li class="nav-item active"><a class="nav-link" href="/index">Start</a></li>
-								<li class="nav-item"><a class="nav-link" href="/oferta">Oferta</a></li>
+								<li class="nav-item active"><a class="nav-link" href="{% url 'index' %}">Start</a></li>
+								<li class="nav-item"><a class="nav-link" href="{% url 'oferta' %}">Oferta</a></li>
 								<li class="nav-item"><a class="nav-link" href="/onas">O nas</a></li>
-								<li class="nav-item"><a class="nav-link" href="/kompetencje">Kompetencje</a></li>
+								<li class="nav-item"><a class="nav-link" href="{% url 'kompetencje' %}">Kompetencje</a></li>
 								<li class="nav-item"><a class="nav-link" href="/narzedzia">Narzędzia</a></li>
 								<li class="nav-item"><a class="nav-link" href="/newsroom">Newsroom</a></li>
 								<li class="nav-item"><a class="nav-link" href="/kontakt">Kontakt</a></li>
@@ -67,7 +67,7 @@
 					<div class="carousel-item active">
 						<img src="{% static 'content/slide.jpg' %}" alt="First slide">
 						<div class="carousel-caption d-none d-md-block text-left">
-							<h1><b>Lorem ipsum</b> dolor sit amet,<br/> consectetur adipiscing elit</h1>
+							<h1><b>Rzetelne dane</b> są podstawą,<br/> trafnych decyzji biznesowych</h1>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam <span>˜Hexe Data Team˜</span></p>
 						</div>
 					</div>

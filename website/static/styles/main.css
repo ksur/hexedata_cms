@@ -282,7 +282,7 @@ button {
   .main-carousel .carousel-caption {
     bottom: auto;
     left: auto;
-    max-width: 360px;
+    max-width: 370px;
     color: #231f20; }
     @media (min-width: 768px) {
       .main-carousel .carousel-caption {
