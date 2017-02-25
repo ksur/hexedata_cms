@@ -2,7 +2,44 @@
 {% load staticfiles %}
 
 {% block content %}
+    <div class="content-wrapper col-12 col-lg-8">
 
-    test
-    
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/index">Hexe Data</a></li>
+            <li class="breadcrumb-item active">Oferta</li>
+        </ol>
+        <div class="post">
+            <h1>Visual Analytics</h1>
+
+            <p>Wdrożenia rozwiązań opartych o platformę Tableau, umożliwiających graficzne pokazanie zależności pomiędzy danymi w czytelnej i zwięzłej formie.</p>
+
+
+
+            <h2>Tableau</h2>
+            <p>Jest to oprogramowanie do analityki biznesowej, nastawione na interaktywną wizualizację danych. Tableau pozwala łączenie różnych strumieni danych i następnie na wzajemną wizualizację relacji pomiędzy danymi oraz kluczowych wskaźników jakie można wyznaczyć na bazie tych danych.</p>
+            <p><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/gAruNQGxYMA?rel=0?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div></p>
+            <p>Tableau pozwala na zbudowanie zaawansowanych, w sensie merytorycznym, systemów raportowanie i analizy dostosowanych do różnych grup odbiorców np. raportowanie dla zarządu, raportowanie dla działów sprzedaży, marketingu itp.</p>
+            <h2>Dlaczego Tableau?</h2>
+            <p>Tableau jest niekwestionowanym <b>liderem</b> w dziedzinie "Business Intelligence and Analytics", czego potwierdzeniem jest pięć kolejnych zwycięstw w Gartner Magic Quadrant for Business Intelligence and Analytics (ostatnie w 2017 roku).</p>
+            <p><a href="https://www.tableau.com/resource/2017-gartner-magic-quadrant">Zobacz raport Gartner Magic Quadrant &raquo;</a></p>
+
+            <h2>Nasza oferta</h2>
+            <p>Oferujemy Państwu następujące usługi związane z produktami Tableau:</p>
+            <ul>
+                <li>Implementacja i konfiguracja produktów Tableau (Tableau Server, Tablesu Online)</li>
+                <li>Szkolenia z zakresu wiedzy i użytkowania produktów Tableau</li>
+                <li>Usługi związane z raportowaniem opartym o Tableau</li>
+                <li>Usługi związane z rozbudową i udoskonaleniem istniejącego systemu raportowania w systemie Tableau</li>
+                <li>Migrację z innych środowisk raportowania / analizy biznesowej do Tableau</li>
+            </ul>
+            <p>Zapoznaj się z naszą ofertą - <a href="{% url 'kontakt' %}">skontaktuj się z analitykiem &raquo;</a></p>
+
+            <img class="full-width" src="{% static 'content/tableau_3.jpg' %}" alt="Post Image">
+            <img class="half-width" src="{% static 'content/tableau-1.jpg' %}" alt="Post Image">
+            <img class="half-width" src="{% static 'content/tableau-2.jpg' %}" alt="Post Image">
+        </div>
+    </div>
+
 {% endblock %}
+
+
