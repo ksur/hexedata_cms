@@ -6,7 +6,7 @@ urlpatterns = [
     url(r'^kompetencje/', views.kompetencje, name='kompetencje'),
     url(r'kontakt/', views.kontakt, name='kontakt'),
     url(r'oferta/', views.oferta, name='oferta'),
-    url(r'onas/', views.oferta),
+    url(r'onas/', views.onas),
     url(r'index/', views.index),
     url(r'narzedzia/', views.narzedzia),
     url(r'newsroom/', views.newsroom),

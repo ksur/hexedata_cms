@@ -63,3 +63,10 @@ def newsroom(request):
     }
     return render(request, 'newsroom.html', context)
 
+# page onas
+def onas(request):
+    metaTitle = 'Hexe Data. O nas'
+    context = {
+        'metaTitle' : metaTitle,
+    }
+    return render(request, 'onas.html', context)

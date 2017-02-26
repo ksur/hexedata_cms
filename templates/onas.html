@@ -1,10 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-o nas
-</body>
-</html>
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="content-wrapper col-12 col-lg-8">
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/index">Hexe Data</a></li>
+            <li class="breadcrumb-item active">Oferta</li>
+        </ol>
+        <div class="post">
+            <h1>O nas</h1>
+            <p>ddd</p>
+            <h2>Misja</h2>
+            <h2>Zespół</h2>
+            <img class="half-width" src="{% static 'content/post-1.jpg' %}" alt="Post Image">
+            <img class="half-width" src="{% static 'content/post-2.jpg' %}" alt="Post Image">
+        </div>
+    </div>
+
+{% endblock %}
+
+
