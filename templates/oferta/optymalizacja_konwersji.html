@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="content-wrapper col-12 col-lg-8">
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'index' %}">Hexe Data</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'oferta' %}">Oferta</a></li>
+            <li class="breadcrumb-item active">Analiza danych</li>
+        </ol>
+        <div class="post">
+            <h1>Optymalizacja konwersji</h1>
+
+            <p>Wykonujemy prace związane z doborem i implementacją narzędzi analitycznych.</p>
+
+
+            <img class="full-width" src="{% static 'content/img6.jpg' %}" alt="Post Image">
+
+
+
+            <img class="half-width" src="{% static 'content/img7.jpg' %}" alt="Post Image">
+            <img class="half-width" src="{% static 'content/img8.jpg' %}" alt="Post Image">
+        </div>
+    </div>
+
+{% endblock %}
+
+

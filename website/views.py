@@ -26,6 +26,9 @@ def visualAnalytics(request):
 def wdrozeniaAnalityczne(request):
     return render(request, 'oferta/wdrozenia_analityczne.html')
 
+def wdrozeniaAnalityczne(request):
+    return render(request, 'oferta/optymalizacja_konwersji.html')
+
 # end page oferta ##############################################
 
 # page kompetencje
