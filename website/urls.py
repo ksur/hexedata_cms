@@ -13,4 +13,5 @@ urlpatterns = [
     url(r'analiza-danych/', views.analizaDanych, name='analizaDanych'),
     url(r'visual-analytics/', views.visualAnalytics, name='visualAnalytics'),
     url(r'wdrozenia-analityczne/', views.wdrozeniaAnalityczne, name='wdrozeniaAnalityczne'),
+    url(r'optymalizacja-konwersji/', views.optymalizacjaKonwersji, name='optymalizacjaKonwersji')
 ]
