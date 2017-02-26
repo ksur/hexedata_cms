@@ -21,7 +21,7 @@
 <body>
 
 <!-- start page -->
-<div id="page" class="homepage">
+<div id="page" class="contact">
 
 
     <!-- start header -->
@@ -43,7 +43,7 @@
 						</button>
 						<div class="collapse navbar-collapse" id="navbarToggler">
 							<ul class="navbar-nav justify-content-around">
-								<li class="nav-item"><a class="nav-link" href="{% url 'index' %}">Start</a></li>
+								<li class="nav-item active"><a class="nav-link" href="{% url 'index' %}">Start</a></li>
 								<li class="nav-item"><a class="nav-link" href="{% url 'oferta' %}">Oferta</a></li>
 								<li class="nav-item"><a class="nav-link" href="/onas">O nas</a></li>
 								<li class="nav-item"><a class="nav-link" href="{% url 'kompetencje' %}">Kompetencje</a></li>
@@ -84,40 +84,6 @@
             <div class="row">
 
                 {% block content %}{% endblock %}
-
-                <!-- sidebar start -->
-                <div class="col-12 col-lg-4">
-                    <div class="sidebar">
-                        <div>
-                            <h2>Zamów darmową sesję z naszym analitykiem</h2>
-                            <p>Jeżeli Twój biznes generuje ponad 100 tysięcy złotych przychodu miesięcznie, to dajemy Tobie,
-                                zupełnie za darmo, 60 minutową sesję podczas której nasz specjalista przeanalizuje kluczowe obszary
-                                Twojego biznesu i zaproponuje rozwiązania analityczne, pozwalające na wzrost współczynnika konwersji
-                                online.</p>
-                            <a href="{% url 'kontakt' %}" class="btn btn-primary d-block">Zarezerwuj termin Twojej sesji</a>
-                        </div>
-                        <div>
-                            <h2>Pracujemy dla marek polskich i światowych</h2>
-                            <p>Wybrane marki z jakimi pracowali nasi konsultanci.</p>
-                            <div class="logos-wrapper">
-                                <span><img src="{% static 'content/logo-winiary.png' %}" alt="Winiary"></span>
-                                <span><img src="{% static 'content/logo-tesco.png' %}" alt="Tesco"></span>
-                                <span><img src="{% static 'content/logo-vw.png' %}" alt="Volkswagen Bank"></span>
-                                <span><img src="{% static 'content/logo-credit-suisse.png' %}" alt="Credit Suisse"></span>
-                                <span><img src="{% static 'content/logo-play.png' %}" alt="Play"></span>
-                                <span><img src="{% static 'content/logo-newsweek.png' %}" alt="Newsweek"></span>
-                                <span><img src="{% static 'content/logo-bayer.png' %}" alt="Bayer"></span>
-                                <span><img src="{% static 'content/logo-krd.png' %}" alt="Krajowy Rejestr Długów"></span>
-                            </div>
-                        </div>
-                        <div>
-                            <h2>Kontakt</h2>
-                            <p class="contact-phone"><a href="tel:48560123123">+48 667 16 70 70</a></p>
-                            <p class="contact-email"><a href="mailto:hello@hexedata.com">hello@hexedata.com</a></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- sidebar end -->
 
             </div>
         </div>
