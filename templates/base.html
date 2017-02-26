@@ -48,7 +48,7 @@
 								<li class="nav-item"><a class="nav-link" href="/onas">O nas</a></li>
 								<li class="nav-item"><a class="nav-link" href="{% url 'kompetencje' %}">Kompetencje</a></li>
 								<li class="nav-item"><a class="nav-link" href="/narzedzia">Narzędzia</a></li>
-								<li class="nav-item"><a class="nav-link" href="/newsroom">Newsroom</a></li>
+
 								<li class="nav-item"><a class="nav-link" href="/kontakt">Kontakt</a></li>
 							</ul>
 						</div>
@@ -129,15 +129,14 @@
 		<div class="container">
 			<div class="row no-gutters text-center align-items-center">
 				<ul class="col-12 col-md-8 flex-md-last text-md-right menu">
-					<li><a href="#">Start</a></li>
-					<li><a href="#">Oferta</a></li>
-					<li><a href="#">O nas</a></li>
-					<li><a href="#">Kompetencje</a></li>
-					<li><a href="#">Narzędzia</a></li>
-					<li><a href="#">Newsroom</a></li>
-					<li><a href="#">Kontakt</a></li>
+					<li><a href="{% url 'index' %}">Start</a></li>
+					<li><a href="{% url 'oferta' %}">Oferta</a></li>
+					<li><a href="{% url 'onas' %}">O nas</a></li>
+					<li><a href="{% url 'kompetencje' %}">Kompetencje</a></li>
+					<li><a href="{% url 'narzedzia' %}">Narzędzia</a></li>
+					<li><a href="{% url 'kontakt' %}">Kontakt</a></li>
 				</ul>
-				<p class="col-12 col-md-4 text-md-left copyrights">// Copyright <a href="#">Hexe Capital SP. z o.o. SK</a></p>
+				<p class="col-12 col-md-4 text-md-left copyrights">// Copyright <a href="http://hexecapital.com">Hexe Capital SP. z o.o. SK</a></p>
 			</div>
 		</div>
 	</footer>
