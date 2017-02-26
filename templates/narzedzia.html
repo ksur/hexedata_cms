@@ -1,10 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-narz
-</body>
-</html>
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="content-wrapper col-12 col-lg-8">
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'index' %}">Hexe Data</a></li>
+            <li class="breadcrumb-item active">Narzędzia</li>
+        </ol>
+        <div class="post">
+            <h1>Narzędzia</h1>
+            <p>Posiadamy szerokie kompetencje marytoryczne poparte wieloletnim doświadczeniem i praktyką zdobytą podczas pracy z największymi markami, takimi jak Tesco, Nextle, Credit Suisse, Mall, Play czy Ringier Axel Springer.</p>
+            <img class="full-width" src="{% static 'content/img19.jpg' %}" alt="Post Image">
+            <h6>Nasze kompetencje obejmują następujące obszary:</h6>
+
+            <img class="half-width" src="{% static 'content/img17.jpg' %}" alt="Post Image">
+            <img class="half-width" src="{% static 'content/img18.jpg' %}" alt="Post Image">
+
+        </div>
+    </div>
+
+{% endblock %}
+
+

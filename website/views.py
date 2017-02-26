@@ -53,7 +53,7 @@ def narzedzia(request):
     context = {
         'metaTitle' : metaTitle,
     }
-    return render(request, 'kontakt.html', context)
+    return render(request, 'narzedzia.html', context)
 
 # page newsroom
 def newsroom(request):
