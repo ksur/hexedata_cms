@@ -1,0 +1,26 @@
+{% extends "base2.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+    <div class="content col-12 col-lg-8">
+        <div style="padding: 20px;">
+            <a href="https://www.google.pl/maps/place/Stanis%C5%82awa+Moniuszki+11,+Wroc%C5%82aw/@51.1193103,17.0824526,17z/data=!4m8!1m2!2m1!1sgoogle+maps+moniuszki+11!3m4!1s0x470fe83bcc5bc519:0xb0a1bcf8843ac81e!8m2!3d51.1193085!4d17.084665"><img class="full-width" src="{% static 'content/map.jpg' %}" alt="Hexe Data on Google Maps"></a>
+        </div>
+    </div>
+    <div class="col-12 flex-lg-first col-lg-4">
+        <div class="contact-sidebar text-center">
+            <h2>Zapraszamy do kontaktu</h2>
+            <p>Adres: <br/><span>ul. Stanisława Moniuszki 11<br/>Wrocław</span></p>
+            <p>E-mail: <br/><a href="mailto:hello@hexedata.com">hello@hexedata.com</a></p>
+        </div>
+    </div>
+    <div class="col-12 col-lg-8">
+        <h2>Zamów darmową sesję z naszym analitykiem</h2>
+                            <p>Jeżeli Twój biznes generuje ponad 100 tysięcy złotych przychodu miesięcznie, to dajemy Tobie,
+                                zupełnie za darmo, 60 minutową sesję podczas której nasz specjalista przeanalizuje kluczowe obszary
+                                Twojego biznesu i zaproponuje rozwiązania analityczne, pozwalające na wzrost współczynnika konwersji
+                                online.</p>
+    </div>
+
+{% endblock %}

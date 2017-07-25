@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="content-wrapper col-12 col-lg-8">
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'index' %}">Hexe Data</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'oferta' %}">Oferta</a></li>
+            <li class="breadcrumb-item active">Wdrożenia analityczne</li>
+        </ol>
+        <div class="post">
+            <h1>Wdrożenia analityczne</h1>
+
+            <p>Wykonujemy prace związane z doborem i implementacją narzędzi analitycznych.</p>
+
+
+            <img class="full-width" src="{% static 'content/img6.jpg' %}" alt="Post Image">
+
+
+            <p>Wdrażamy narzędzia z zakresu analityki internetowej, analityki biznesowej, wizualizacji danych a także narzędzia dedykowane, szyte na miarę do Państwa potrzeb i przygotowywane przez naszych programistów.</p>
+            <h5>Wdrażane rozwiązania</h5>
+            <p>Wdrażamy m.in. następujące rozwiązania:</p>
+            <ul>
+                <li>Google Analytics 360</li>
+                <li>Google Tag Manager</li>
+                <li>Adobe Marketing Cloud</li>
+                <li>Tableau Software</li>
+                <li>Inne rozwiązania wg potrzeb</li>
+            </ul>
+            <h2>Rozwiązania e-commerce</h2>
+            <p>W ramach zespołu odpowiedzialnego za wdrożenia analityczne, mamy również komórkę odpowiedzialną za wdrożenia rozwiązań e-commerce ze szczególnym nastawieniem na kwestie analityki i optymalizacji konwersji, także optymalizacji szeroko rozumianych procesów biznesowych.</p>
+
+
+            <img class="half-width" src="{% static 'content/img7.jpg' %}" alt="Post Image">
+            <img class="half-width" src="{% static 'content/img8.jpg' %}" alt="Post Image">
+        </div>
+    </div>
+
+{% endblock %}
+
+

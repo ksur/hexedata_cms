@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="content-wrapper col-12 col-lg-8">
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'index' %}">Hexe Data</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'oferta' %}">Oferta</a></li>
+            <li class="breadcrumb-item active">Optymalizacja konwersji</li>
+        </ol>
+        <div class="post">
+            <h1>Optymalizacja konwersji /CRO/</h1>
+
+            <p>Wdrażamy i realizujemy proces optymalizacji konwersji.</p>
+            <p>Optymalizacja konwersji koncentruje się na optymalizacji bixnesowej oraz optymalizacji UX w kluczowych procesach serwisu internetowego, tak aby zwięksyć ilość kluczowych akcji w procesach sprzedażowych czy też procesach pozyskania leadów.</p>
+
+            <p><img class="full-width" src="{% static 'content/img13.jpg' %}" alt="Post Image"></p>
+            <h2>Proces</h2>
+            <p>Optymalizacja konwersji jest procesem realizowanym stopniowo, zgodnie z założeniami zdefiniowanymi przez Kaizen - koncentrujemy się na małych, ale systematycznych krokach, które przynoszą realne zmiany.</p>
+            <ol>
+                <li>Analiza</li>
+                <li>Przyhotowanie i testowanie hipotez</li>
+                <li>Wnioskowanie</li>
+                <li>Wdrożenie finalnego rozwiązania</li>
+                <li>Ponowna analiza - powrót do początku procesu</li>
+            </ol>
+            <p></p>
+
+            <img class="half-width" src="{% static 'content/img10.jpg' %}" alt="Post Image">
+            <img class="half-width" src="{% static 'content/img11.jpg' %}" alt="Post Image">
+        </div>
+
+    </div>
+
+{% endblock %}
+
+

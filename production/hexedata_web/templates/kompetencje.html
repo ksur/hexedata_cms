@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="content-wrapper col-12 col-lg-8">
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/index">Hexe Data</a></li>
+            <li class="breadcrumb-item active">Kompetencje</li>
+        </ol>
+        <div class="post">
+            <h1>Kompetencje</h1>
+            <p>Posiadamy szerokie kompetencje marytoryczne poparte wieloletnim doświadczeniem i praktyką zdobytą podczas pracy z największymi markami, takimi jak Tesco, Nextle, Credit Suisse, Mall, Play czy Ringier Axel Springer.</p>
+            <img class="full-width" src="{% static 'content/img19.jpg' %}" alt="Post Image">
+            <h6>Nasze kompetencje obejmują następujące obszary:</h6>
+            <ul>
+                <li>Wdrożenia rozwiązań analitycznych (oprogramowanie analityczne np. Adobe Analytics, Google Analytics 360 etc.)</li>
+                <li>Wdrożenia rozwiązań analitycznych dla aplikacji mobilnych</li>
+                <li>Audyt rozwiązań analitycznych z weryfikacją poprawności wdrożenie i zbierania danych</li>
+                <li>Wdrożenia rozwiązań związanych z Business Intelligence oraz Big Data</li>
+                <li>Wdrożenia systemów wizualizacji danych np. Tableau</li>
+                <li>Optymalizacja i zarządzanie tagami dostarczanymi przez podmioty zewnętrzne</li>
+                <li>Integracja danych pochodzących z różnych źródeł</li>
+                <li>Optymalizacja konwersji w serwisach e-commerce</li>
+                <li>Optymalizacja użyteczności serwisów i aplikacji mobilnych</li>
+                <li>Optymalizacja działań marketingowych</li>
+                <li>Optymalizacja kampanii AdWords</li>
+                <li>Wdrożenia systemu i zasad cyklicznego raportowania</li>
+                <li>Konsulting i wsparcie analityczne</li>
+                <li>Szkolenia z zakresu analityki internetowej</li>
+                <li>Programistyczne przygotowanie dedykowanych rozwiązań analitycznych</li>
+            </ul>
+
+            <img class="half-width" src="{% static 'content/img17.jpg' %}" alt="Post Image">
+            <img class="half-width" src="{% static 'content/img18.jpg' %}" alt="Post Image">
+
+        </div>
+    </div>
+
+{% endblock %}
+
+
