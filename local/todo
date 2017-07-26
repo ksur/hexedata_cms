@@ -1,4 +1,4 @@
-connect to postgres on local database
+* connect to postgres on local database
 create database structure - separate program
 move content from local view file to database
 add contact form
