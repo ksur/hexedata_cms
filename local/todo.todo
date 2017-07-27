@@ -1,10 +1,10 @@
 List of tasks: 
-☐ connect to postgres on local database
-☐ create database structure - separate program
+✔ connect to postgres on local database @done (7/27/2017, 2:58:40 PM)
+✔ create database structure - separate program @done (7/27/2017, 2:58:48 PM)
 ☐ move content from local view file to database
 ☐ add contact form
 ☐ fix hamburger icon
-☐ create basic admin area
+✔ create basic admin area @done (7/27/2017, 2:58:58 PM)
 ☐ fix language errors
 ☐ create start structure for blog
 ☐ blog - mainpage with post list

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+CAUTION: Do not modify this file unless you know what you are doing.
+         Unexpected results may occur if the code is changed deliberately.
+-->
+<dbmodel pgmodeler-ver="0.8.2" last-position="0,0" last-zoom="1"
+	 default-schema="public" default-owner="postgres">
+<database name="new_database">
+</database>
+
+<schema name="public" fill-color="#e1e1e1" sql-disabled="true">
+</schema>
+
+<table name="artykuly" gen-alter-cmds="true">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<comment><![CDATA[tabela z tekstami na strone]]></comment>
+	<position x="80" y="120"/>
+	<column name="id" not-null="true">
+		<type name="integer"/>
+	</column>
+	<column name="kategoria_id" not-null="true">
+		<type name="integer"/>
+	</column>
+	<column name="tytul" not-null="true">
+		<type name="varchar" length="255"/>
+	</column>
+	<column name="wersja_krotka">
+		<type name="text"/>
+	</column>
+	<column name="wersja_dluga">
+		<type name="text"/>
+	</column>
+	<column name="autor">
+		<type name="varchar" length="200"/>
+	</column>
+	<column name="data">
+		<type name="timestamp"/>
+	</column>
+	<column name="slot1">
+		<type name="varchar" length="255"/>
+	</column>
+	<column name="slot2">
+		<type name="varchar" length="255"/>
+	</column>
+	<column name="slot3">
+		<type name="varchar" length="255"/>
+	</column>
+	<column name="slot4">
+		<type name="varchar" length="255"/>
+	</column>
+	<column name="meta_title">
+		<type name="varchar" length="255"/>
+	</column>
+	<column name="meta_keywords">
+		<type name="varchar" length="255"/>
+	</column>
+	<column name="meta_description">
+		<type name="varchar" length="255"/>
+	</column>
+<constraint name="id" type="pk-constr" table="public.artykuly">
+	<columns names="id" ref-type="src-columns"/>
+</constraint>
+
+</table>
+
+<table name="kategorie">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="540" y="140"/>
+	<column name="id" not-null="true">
+		<type name="integer"/>
+	</column>
+	<column name="nazwa">
+		<type name="varchar" length="250"/>
+	</column>
+	<column name="opis">
+		<type name="text"/>
+	</column>
+	<column name="slot1">
+		<type name="varchar" length="255"/>
+	</column>
+	<constraint name="id_1" type="pk-constr" table="public.kategorie">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<constraint name="kategoria_id" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="public.kategorie" table="public.artykuly">
+	<columns names="kategoria_id" ref-type="src-columns"/>
+	<columns names="id" ref-type="dst-columns"/>
+</constraint>
+
+<relationship name="rel_artykuly_kategorie" type="relfk"
+	 src-table="public.artykuly"
+	 dst-table="public.kategorie"
+	 src-required="false" dst-required="false"/>
+
+</dbmodel>
