@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Artykuly
 
 
 # main page
@@ -70,3 +71,7 @@ def onas(request):
         'metaTitle' : metaTitle,
     }
     return render(request, 'onas.html', context)
+
+# blog list
+#def artykuly_list(request):
+    
