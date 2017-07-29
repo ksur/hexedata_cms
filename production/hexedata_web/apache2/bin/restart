@@ -1,3 +1,0 @@
-#!/bin/bash
-
-LD_LIBRARY_PATH=/home/krzysztofs/webapps/hexedata_web/apache2/lib:/home/krzysztofs/webapps/hexedata_web/lib /home/krzysztofs/webapps/hexedata_web/apache2/bin/httpd.worker -f /home/krzysztofs/webapps/hexedata_web/apache2/conf/httpd.conf -k restart
