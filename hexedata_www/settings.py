@@ -82,6 +82,14 @@ DATABASES = {
         'PASSWORD': 'password',
         'HOST': 'localhost',
         'PORT': '5432',
+    },
+    'production' :{
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'hexedata_staging',
+        'USER': 'hexedata',
+        'PASSWORD': 'adamadam',
+        'HOST': 'web536.webfaction.com',
+        'PORT': '5432',  
     }
 }
 
