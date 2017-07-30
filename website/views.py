@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.utils import timezone
 from .models import Artykuly
 
 
@@ -67,11 +68,13 @@ def newsroom(request):
 # page onas
 def onas(request):
     metaTitle = 'Hexe Data. O nas'
+    artykuly = Artykuly.objects.all()
     context = {
         'metaTitle' : metaTitle,
+        'artykuly' : artykuly,
     }
     return render(request, 'onas.html', context)
 
 # blog list
-#def artykuly_list(request):
-    
+def artykuly_list(request):
+    artykuly = Artykuly.objects.all()

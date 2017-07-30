@@ -32,6 +32,12 @@
         </div>
     </div>
 
+    {% for artykul in artykuly %}
+        test: {{ artykul.tytul }}
+        <br>
+        {{ artykul.data }}
+    {% endfor %}
+
 {% endblock %}
 
 
