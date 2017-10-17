@@ -1,6 +1,14 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 
+{% block title %}
+    Analiza danych i analityka internetowa. Hexe Data.
+{% endblock %}
+
+
+{% block description %}
+    Analiza danych i implementacja systemów analitycznych. Google Analytics, Google Tag Manager. Wizualizacja danych i optymalizacja konwersji. Hexe Data
+{% endblock %}
 
 
 {% block content %}
@@ -24,17 +32,17 @@
                     <div class="gfx-wrapper">
                         <img src="{% static 'content/icon-va.png' %}" alt="Visual Analytics">
                     </div>
-                    <p>Visual Analytics to narzędzia i usługa nastawiona na prezentację danych w sposób zwięzły, przejrzysty i pokazujący wzajemne zależności, korelacje pomiędzy grupami danych. W ramach wdrożenia oferujemy tu produkty światowych liderów Tableau i Qlick, zarówno w zakresie konfiguracji jak i integracji z obecną analityką firmy.</p>
+                    <p>Visual Analytics to prezentacja danych w sposób zwięzły, pokazujący wzajemne zależności oraz korelacje pomiędzy grupami danych. W ramach wdrożenia oferujemy wsparcie przy wykorzystaniu produktów światowych liderów takich jak Tableau i Qlick, zarówno w zakresie konfiguracji oraz interpretacji tworzonych raportów.</p>
                     <a href="{% url 'visualAnalytics' %}" class="btn btn-secondary">Zobacz więcej</a>
                 </div>
             </div>
             <div class="col-12 col-sm-6">
                 <div class="box">
-                    <h3 class="title">Wdrożenie analityczne</h3>
+                    <h3 class="title">Wdrożenia analityczne</h3>
                     <div class="gfx-wrapper">
                         <img src="{% static 'content/icon-wa.png' %}" alt="Wdrożenie analityczne">
                     </div>
-                    <p>Wdrożenia analityczne obejmują implementację systemów analitycznych - np. Adobe Marketing Cloud, Google Analytics 360 - w zakresie konfiguracji technicznej oraz analitycznej. Oferujemy również usługi w zakresie audytu już istniejących systemów oraz ich rozbudowy o dodatkowe źródła danych czy dodatkowe funkcje. </p>
+                    <p>Wdrożenia analityczne obejmują implementację systemów analitycznych takich jak np. Adobe Marketing Cloud, Google Analytics 360 - w zakresie konfiguracji technicznej oraz analitycznej. Oferujemy również usługi w zakresie audytu już istniejących systemów oraz ich rozbudowy o dodatkowe źródła danych czy dodatkowe funkcje. </p>
                     <a href="{% url 'wdrozeniaAnalityczne' %}" class="btn btn-secondary">Zobacz więcej</a>
                 </div>
             </div>
@@ -50,30 +58,9 @@
             </div>
         </div>
     </div>
+
+
+
 {% endblock %}
 
-
-<section class="news-section">
-    <div class="container">
-        <h3 class="heading-with-line"><span>Newsroom</span></h3>
-        <div class="row no-gutters">
-            <a href="#" class="col-sm-6 col-lg-3 text-center">
-                <h4>Nowa wersja Adobe Analytic</h4>
-                <span class="btn btn-sm btn-primary">Czytaj</span>
-            </a>
-            <a href="#" class="col-sm-6 col-lg-3 text-center">
-                <h4>Google Analytics wprowadza zmienne lokalne</h4>
-                <span class="btn btn-sm btn-primary">Czytaj</span>
-            </a>
-            <a href="#" class="col-sm-6 col-lg-3 text-center">
-                <h4>Nowa wersja Adobe Analytic</h4>
-                <span class="btn btn-sm btn-primary">Czytaj</span>
-            </a>
-            <a href="#" class="col-sm-6 col-lg-3 text-center">
-                <h4>Google Analytics wprowadza zmienne lokalne</h4>
-                <span class="btn btn-sm btn-primary">Czytaj</span>
-            </a>
-        </div>
-    </div>
-</section>
 

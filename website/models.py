@@ -8,7 +8,7 @@
 from __future__ import unicode_literals
 
 from django.db import models
-from django.utils import timezone
+
 
 class Artykuly(models.Model):
     id = models.IntegerField(primary_key=True)
@@ -25,13 +25,6 @@ class Artykuly(models.Model):
     meta_title = models.CharField(max_length=255, blank=True, null=True)
     meta_keywords = models.CharField(max_length=255, blank=True, null=True)
     meta_description = models.CharField(max_length=255, blank=True, null=True)
-
-    def publish(self):
-        self.data = timezone.now()
-        self.save()
-
-    def __str__(self):
-        return self.tytul
 
     class Meta:
         managed = False

@@ -1,19 +1,32 @@
-{% extends "base2.html" %}
+{% extends "base.html" %}
 {% load staticfiles %}
+
+{% block title %}
+    Kontakt. Hexe Data. Analiza danych i analityka internetowa dla firm
+{% endblock %}
+
+
+{% block description %}
+    Kontakt z Hexe Data. Analiza danych, optymalizacja konwersji i implementacja systemów analitycznych. Google Analytics, Google Tag Manager. Wizualizacja danych i optymalizacja konwersji
+{% endblock %}
+
+{% block main_class %}class="contact"{% endblock %}
 
 {% block content %}
 
-    <div class="content col-12 col-lg-8">
-        <div style="padding: 20px;">
-            <a href="https://www.google.pl/maps/place/Stanis%C5%82awa+Moniuszki+11,+Wroc%C5%82aw/@51.1193103,17.0824526,17z/data=!4m8!1m2!2m1!1sgoogle+maps+moniuszki+11!3m4!1s0x470fe83bcc5bc519:0xb0a1bcf8843ac81e!8m2!3d51.1193085!4d17.084665"><img class="full-width" src="{% static 'content/map.jpg' %}" alt="Hexe Data on Google Maps"></a>
-        </div>
+
+
+    <div class="content col-12 col-lg-6 contact-sidebar">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2506.492594003312!2d17.019028315640362!3d51.08091607956731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc24f83f3da01%3A0x400673198866ff56!2saleja+Jarz%C4%99binowa+26%2C+Wroc%C5%82aw!5e0!3m2!1spl!2spl!4v1507327511726" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
-    <div class="col-12 flex-lg-first col-lg-4">
+    <div class="col-12 flex-lg-first col-lg-6">
         <div class="contact-sidebar text-center">
-            <h2>Zapraszamy do kontaktu</h2>
-            <p>Adres: <br/><span>ul. Moniuszki 11<br/>Wrocław</span></p>
-            <p>Telefon: <br/><a href="tel:607278890">+48 667 16 70 70</a></p>
-            <p>E-mail: <br/><a href="mailto:info@hexedata.pl">hello@hexedata.pl</a></p>
+<h3>Zapraszamy do kontaktu</h3><br/>
+            <p><span>Hexe Data Sp. z o.o.</span><br/>Rozwiązania i wdrożenia analityki internetowej dla firm i serwisów e-commerce.<br/>Optymalizacja konwersji i wizualizacja danych.
+            </p>
+            <p>Adres spółki: <br/><span>al. Jarzębinowa 24/26 lok. 1a<br>53-120 Wrocław</span></p>
+            <p>E-mail: <br/><a href="mailto:hello@hexedata.com">hello@hexedata.com</a></p>
+            <p>Rachunek bankowy:<br/><span>08 1050 1575 1000 0090 3134 3487</span></p>
         </div>
     </div>
 

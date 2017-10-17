@@ -5,7 +5,7 @@
 <html lang="pl">
 <head>
 	<meta charset="utf-8">
-	<meta name="description" content="">
+	<meta name="description" content="{% block description %}{% endblock %}">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>{% block title %}{% endblock %}</title>
 
@@ -17,11 +17,24 @@
 	<link rel="stylesheet" href="{% static '/styles/main.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
 
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MHLDPKP');</script>
+    <!-- End Google Tag Manager -->
+
 </head>
 <body>
 
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHLDPKP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <!-- start page -->
-<div id="page" class="homepage">
+<div id="page" {% block main_class %}class="homepage"{% endblock %}>
 
 
     <!-- start header -->
@@ -47,9 +60,9 @@
 								<li class="nav-item"><a class="nav-link" href="{% url 'oferta' %}">Oferta</a></li>
 								<li class="nav-item"><a class="nav-link" href="/onas">O nas</a></li>
 								<li class="nav-item"><a class="nav-link" href="{% url 'kompetencje' %}">Kompetencje</a></li>
-								<li class="nav-item"><a class="nav-link" href="/narzedzia">Narzędzia</a></li>
-
-								<li class="nav-item"><a class="nav-link" href="/kontakt">Kontakt</a></li>
+								<li class="nav-item"><a class="nav-link" href="{% url 'narzedzia' %}">Narzędzia</a></li>
+								<li class="nav-item"><a class="nav-link" href="{% url 'blog' %}">Baza wiedzy</a></li>
+								<li class="nav-item"><a class="nav-link" href="{% url 'kontakt' %}">Kontakt</a></li>
 							</ul>
 						</div>
 					</nav>
@@ -68,7 +81,7 @@
 						<img src="{% static 'content/slide.jpg' %}" alt="First slide">
 						<div class="carousel-caption d-none d-md-block text-left">
 							<h1><b>Rzetelne dane</b> są podstawą,<br/> trafnych decyzji biznesowych</h1>
-							<p> Nasz zespół stanowią doświadczeni analitycy, którzy podczas swojej kariery współpracowali z wieloma, czołowymi markami krajowymi jak i zagranicznymi <span>Zapraszamy do współpracy.</span></p>
+							<p> Nasz zespół stanowią doświadczeni analitycy, którzy podczas swojej praktyki zawodowej współpracowali z wieloma, czołowymi markami krajowymi jak i zagranicznymi <span>Zapraszamy do współpracy.</span></p>
 						</div>
 					</div>
 				</div>
@@ -85,15 +98,15 @@
 
                 {% block content %}{% endblock %}
 
+                {% if request.get_full_path != "/kontakt/" %}
                 <!-- sidebar start -->
                 <div class="col-12 col-lg-4">
                     <div class="sidebar">
                         <div>
-                            <h2>Zamów darmową sesję z naszym analitykiem</h2>
-                            <p>Jeżeli Twój biznes generuje ponad 100 tysięcy złotych przychodu miesięcznie, to dajemy Tobie,
-                                zupełnie za darmo, 60 minutową sesję podczas której nasz specjalista przeanalizuje kluczowe obszary
-                                Twojego biznesu i zaproponuje rozwiązania analityczne, pozwalające na wzrost współczynnika konwersji
-                                online.</p>
+                            <h2>Zamów sesję z naszym analitykiem</h2>
+                            <p>Zaamów sesję wstępną, podczas której nasz analityk przedyskutuje kluczowe obszary
+                                Twojego biznesu i zaproponuje dalsze kroki związane z budową programu analitycznego.</p>
+							<p></p>
                             <a href="{% url 'kontakt' %}" class="btn btn-primary d-block">Zarezerwuj termin Twojej sesji</a>
                         </div>
                         <div>
@@ -112,12 +125,12 @@
                         </div>
                         <div>
                             <h2>Kontakt</h2>
-                            <p class="contact-phone"><a href="tel:48560123123">+48 667 16 70 70</a></p>
                             <p class="contact-email"><a href="mailto:hello@hexedata.com">hello@hexedata.com</a></p>
                         </div>
                     </div>
                 </div>
                 <!-- sidebar end -->
+                {% endif %}
 
             </div>
         </div>
@@ -125,6 +138,31 @@
     <!-- end content section -->
 
     <!-- footer start -->
+
+    <section class="news-section">
+    <div class="container">
+        <h3 class="heading-with-line"><span>Baza wiedzy</span></h3>
+        <div class="row no-gutters">
+            <a href="http://hexedata.com/blog/google-studio-i-community-connectors/" class="col-sm-6 col-lg-3 text-center">
+                <h4>Google Studio i Community Connectors</h4>
+                <span class="btn btn-sm btn-primary">Czytaj</span>
+            </a>
+            <a href="http://hexedata.com/blog/tymczasowe-segmenty-w-analysis-workspace/" class="col-sm-6 col-lg-3 text-center">
+                <h4>Tymczasowe segmenty w Analysis Workspace</h4>
+                <span class="btn btn-sm btn-primary">Czytaj</span>
+            </a>
+            <a href="http://hexedata.com/blog/adobe-analytics-nowosci-sierpien/" class="col-sm-6 col-lg-3 text-center">
+                <h4>Adobe Analytics – nowości w sierpniowym wydaniu</h4>
+                <span class="btn btn-sm btn-primary">Czytaj</span>
+            </a>
+            <a href="http://hexedata.com/blog/zapowiedzi-nowosci-w-produktach-google/" class="col-sm-6 col-lg-3 text-center">
+                <h4>Zapowiedzi nowości w produktach Google</h4>
+                <span class="btn btn-sm btn-primary">Czytaj</span>
+            </a>
+        </div>
+    </div>
+</section>
+
     <footer>
 		<div class="container">
 			<div class="row no-gutters text-center align-items-center">
@@ -134,9 +172,10 @@
 					<li><a href="{% url 'onas' %}">O nas</a></li>
 					<li><a href="{% url 'kompetencje' %}">Kompetencje</a></li>
 					<li><a href="{% url 'narzedzia' %}">Narzędzia</a></li>
+					<li><a href="{% url 'blog' %}">Baza wiedzy</a></li>
 					<li><a href="{% url 'kontakt' %}">Kontakt</a></li>
 				</ul>
-				<p class="col-12 col-md-4 text-md-left copyrights">// Copyright <a href="http://hexecapital.com">Hexe Capital Sp. z o.o. Spółka Komandytowa</a></p>
+				<p class="col-12 col-md-4 text-md-left copyrights">// Copyright 2017 <a href="http://hexecapital.com">Hexe Data Sp. z o.o.</a></p>
 			</div>
 		</div>
 	</footer>
@@ -145,6 +184,7 @@
 </div>
 <!-- end page -->
 
+<script src="libs/jquery-3.2.1.min.js"></script>
 <script src="{% static 'libs/bootstrap/dist/js/bootstrap.min.js' %}"></script>
 
 </body>
